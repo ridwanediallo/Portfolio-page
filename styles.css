@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+ 
+}
+nav {
+    
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  /* align-items: center; */
+  gap: 80px;
+  background-color: #2bcbba;
+  margin: 0;
+  padding:20px 80px 20px 0;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  color: #303952;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.hero{
+    height: 80vh;
+    background-color: #535c68;
+    text-align: center;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+.about{
+    text-align: center;
+    padding: 120px 0 0 0;
+    color: #130f40;
+}
