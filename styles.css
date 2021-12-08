@@ -1,45 +1,178 @@
+/* **** DEFAULT SETTING **** */
+
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+h1,
+h2 {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
+/* **** HEADER **** */
 header {
- 
+  position: sticky;
+  top: 0;
 }
 nav {
-    
 }
 
 nav ul {
   display: flex;
   justify-content: flex-end;
-  /* align-items: center; */
   gap: 80px;
-  background-color: #2bcbba;
+  background-color: #372800;
   margin: 0;
-  padding:20px 80px 20px 0;
+  padding: 20px 80px 20px 0;
 }
 nav ul li {
   list-style: none;
 }
 nav ul li a {
-  color: #303952;
+  color: #f1cc67f8;
   text-decoration: none;
   cursor: pointer;
+  padding-bottom: 5px;
 }
 
-.hero{
-    height: 80vh;
-    background-color: #535c68;
-    text-align: center;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
+nav ul li a:hover {
+  border-bottom: 5px solid #f1cc67f8;
 }
-.about{
+
+/* **** HERO SECTION **** */
+.hero {
+  height: 100vh;
+  background-color: #f1cc67f8;
+  text-align: center;
+}
+.hero-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding-top: 60px;
+}
+.about {
+  text-align: center;
+  padding: 100px 0 0 0;
+}
+
+.image {
+  width: 30%;
+}
+.about p {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  color: #372800;
+  letter-spacing: 2px;
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.8);
+}
+.about h1 {
+  font-style: normal;
+  font-weight: bold;
+  color: #372800;
+  font-size: 10vmin;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.8);
+  margin-bottom: 40px;
+}
+
+/* **** PROJECTS SECTION **** */
+#projects {
+  background-color: #372800;
+  height: 100vh;
+}
+
+.projects {
+  display: flex;
+  justify-content: space-evenly;
+  height: auto;
+  padding-top: 30px;
+}
+
+.title {
+  text-align: center;
+  padding-top: 40px;
+  color: #f1cc67f8;
+}
+
+.project-tile {
+  background: #f1cc67f8;
+  width: 30%;
+  height: auto;
+  text-align: center;
+  padding-bottom: 40px;
+  border-radius: 9px;
+  overflow: hidden;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.8);
+}
+img {
+  width: 100%;
+}
+.project-tile p {
+  padding-top: 10px;
+  color: #000;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+/* **** CONTACTS SECTION **** */
+
+#contacts {
+  height: 50vh;
+  background-color: #f1cc67f8;
+  text-align: center;
+}
+
+#contacts h1 {
+  padding-top: 40px;
+}
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 250px;
+  padding-top: 50px;
+}
+
+.links a {
+  text-decoration: none;
+  color: #372800;
+  font-size: 24px;
+}
+.fab {
+  font-size: 24px;
+}
+.fas {
+  font-size: 24px;
+}
+span a:hover {
+  border-bottom: 3px solid #372800;
+}
+
+/* **** MEDIA QUERY **** */
+@media only screen and (max-width: 425px) {
+  /*Tablets [601px -> 1200px]*/
+  nav {
     text-align: center;
-    padding: 120px 0 0 0;
-    color: #130f40;
+  }
+  .links {
+    gap: 50px;
+  }
+}
+
+/* **** FOOTER **** */
+footer {
+  text-align: center;
+  background-color: #372800;
+  padding: 10px 0;
+  color: #f1cc67f8;
 }
